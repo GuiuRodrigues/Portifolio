@@ -1,6 +1,6 @@
 @import"https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap";
 :root{
-  --color-green:#50fa7b;
+  --color-green:#8B795E;
   --color-greyp:#474954;
 }
 
@@ -32,7 +32,7 @@ header {
 }
 .links a:hover{
 color: var(--color-green);
-transition: color 200ms;
+transition: color 400ms;
 }
 #wrapper{
   text-align: center;
@@ -49,6 +49,10 @@ font-size: 42px;
 line-height: 52px;
 font-weight: bold;
 }
+#wrapper h1:hover{
+  color: var(--color-green);
+  transition: color 400ms;
+  }
 #wrapper h2{
   font-size: 24px;
   line-height: 32px;
@@ -76,30 +80,43 @@ line-height: 34px;
 
 .cards{
 
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; 
   gap: 20px;
+  text-align: center;
+  padding: 20px;
+
 
 }
 .card{
-
+ 
     background-color:var(--color-greyp) ;
+
+}
+.card p {
+  padding: 5px;
+}
+.card:hover{
+
+  background:#8B795E;
+  transition: 200ms;
 
 }
 
 .card_image-container img{
 
-  width: 50%;
+  width: 100%;
   
 
 }
 
 
-.car_info{
-
+.card_info{
+  text-align: center;
   padding: 24px;
+  font-weight: bold;
 }
 .card_info{
 
@@ -107,11 +124,16 @@ line-height: 34px;
     grid-template-columns: 1fr 1fr;
 }
 
+.card_content{
+  font-weight: bold;
+  font-size: 30px;
+}
+
 .card_tempo{
 
   background-color:var(--color-greyp);
   filter: brightness(70%);
-  border-radius: 50px;
+  border-radius: 20px 0px 20px 0px;
   padding: 5px 20px;
   text-align: center;
   
@@ -136,8 +158,8 @@ line-height: 34px;
 .modal{
 
   background-color: white;
-  width: 90%;
-  height: 90%;
+  width: 80%;
+  height: 80%;
   margin: 5vh auto;
   position: relative;
 
@@ -161,11 +183,12 @@ line-height: 34px;
 
 }
 
-iframe{
+embed{
 
   width: 100%;
-  height: 90%;
+  height: 100%;
+  top: 5vh;
   position: absolute;
-  top: 5%;
+  right: 0%;
 
 }
